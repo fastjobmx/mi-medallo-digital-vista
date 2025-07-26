@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MapPin, Sparkles } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight, MapPin, Sparkles, Percent, BookOpen, Instagram, Heart, GraduationCap } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -43,6 +45,117 @@ const Hero = () => {
             <p className="text-sm sm:text-lg text-white/80 leading-relaxed">
               Encuentra y conecta con negocios verificados, sin intermediarios, desde cualquier dispositivo.
             </p>
+          </div>
+
+          {/* NEGOCIOS DESTACADOS - Botones Premium */}
+          <div className="w-full max-w-6xl mx-auto pt-8 md:pt-12">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-serif drop-shadow-lg">NEGOCIOS DESTACADOS</h3>
+              <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto">
+                Descubre nuestras ofertas exclusivas y mantente conectado con nosotros
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+              {/* Botón Descuentos Especiales en Turismo */}
+              <Card className="luxury-card border-0 p-0 overflow-hidden group hover:scale-105 transition-all duration-500 bg-gradient-to-br from-red-500 via-pink-500 to-orange-500 shadow-2xl hover:shadow-[0_20px_40px_0_rgba(255,0,100,0.3)]">
+                <CardContent className="p-6 md:p-8 text-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-red-400/20 via-pink-400/20 to-orange-400/20 animate-pulse"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Percent className="h-8 w-8 md:h-10 md:w-10 text-white animate-bounce" />
+                    </div>
+                    <Badge className="bg-yellow-400 text-black font-bold text-xs mb-3 md:mb-4 animate-pulse">
+                      ¡OFERTA ESPECIAL!
+                    </Badge>
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 drop-shadow-lg">
+                      Descuentos Especiales
+                    </h4>
+                    <p className="text-white/90 text-sm mb-4 md:mb-6 leading-relaxed">
+                      Ofertas exclusivas en turismo, hoteles y experiencias únicas
+                    </p>
+                    <Button 
+                      size="lg" 
+                      className="w-full bg-white text-red-600 hover:bg-yellow-400 hover:text-black font-bold py-2 md:py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 border-2 border-white/30 text-sm md:text-base"
+                      asChild
+                    >
+                      <a href="https://paraelviaje.tuguiadeturismo.com/" target="_blank" rel="noopener noreferrer">
+                        Ver Descuentos
+                        <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                      </a>
+                    </Button>
+                  </div>
+                  <div className="absolute -top-4 -right-4 w-20 h-20 md:w-24 md:h-24 bg-yellow-400/30 rounded-full animate-float"></div>
+                  <div className="absolute -bottom-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-white/10 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+                </CardContent>
+              </Card>
+
+              {/* Botón Cursos de Formación */}
+              <Card className="luxury-card border-0 p-0 overflow-hidden group hover:scale-105 transition-all duration-500 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 shadow-2xl hover:shadow-[0_20px_40px_0_rgba(0,100,255,0.3)]">
+                <CardContent className="p-6 md:p-8 text-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-indigo-400/20 to-purple-400/20 animate-pulse"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <BookOpen className="h-8 w-8 md:h-10 md:w-10 text-white animate-bounce" />
+                    </div>
+                    <Badge className="bg-green-400 text-black font-bold text-xs mb-3 md:mb-4 animate-pulse">
+                      EDUCACIÓN PREMIUM
+                    </Badge>
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 drop-shadow-lg">
+                      Cursos de Formación
+                    </h4>
+                    <p className="text-white/90 text-sm mb-4 md:mb-6 leading-relaxed">
+                      Capacítate con nuestros cursos especializados y certificaciones
+                    </p>
+                    <Button 
+                      size="lg" 
+                      className="w-full bg-white text-blue-600 hover:bg-green-400 hover:text-black font-bold py-2 md:py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 border-2 border-white/30 text-sm md:text-base"
+                      asChild
+                    >
+                      <a href="https://app.hugex.co/p/form/bgheRWMHHS4POqApBIqc2iWoIJC-eyt8bXiLrnyDUpVb1KmRWQ0WyshDBzDUo1QjTP0kE4XEDZJYSb05ArFgSQI_-8_2t5zNN7HpR4twY_GX8AOhLwwtqZmpNdACbD_5" target="_blank" rel="noopener noreferrer">
+                        Inscribirse
+                        <GraduationCap className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                      </a>
+                    </Button>
+                  </div>
+                  <div className="absolute -top-4 -right-4 w-20 h-20 md:w-24 md:h-24 bg-green-400/30 rounded-full animate-float"></div>
+                  <div className="absolute -bottom-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-white/10 rounded-full animate-float" style={{ animationDelay: '1.5s' }}></div>
+                </CardContent>
+              </Card>
+
+              {/* Botón Instagram */}
+              <Card className="luxury-card border-0 p-0 overflow-hidden group hover:scale-105 transition-all duration-500 bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 shadow-2xl hover:shadow-[0_20px_40px_0_rgba(255,0,150,0.3)]">
+                <CardContent className="p-6 md:p-8 text-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-purple-400/20 to-indigo-400/20 animate-pulse"></div>
+                  <div className="relative z-10">
+                    <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Instagram className="h-8 w-8 md:h-10 md:w-10 text-white animate-bounce" />
+                    </div>
+                    <Badge className="bg-pink-400 text-white font-bold text-xs mb-3 md:mb-4 animate-pulse">
+                      SÍGUENOS
+                    </Badge>
+                    <h4 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 drop-shadow-lg">
+                      @mimedallo2025
+                    </h4>
+                    <p className="text-white/90 text-sm mb-4 md:mb-6 leading-relaxed">
+                      Mantente al día con las últimas novedades y contenido exclusivo
+                    </p>
+                    <Button 
+                      size="lg" 
+                      className="w-full bg-white text-pink-600 hover:bg-pink-400 hover:text-white font-bold py-2 md:py-3 rounded-xl shadow-lg hover:scale-105 transition-all duration-300 border-2 border-white/30 text-sm md:text-base"
+                      asChild
+                    >
+                      <a href="https://www.instagram.com/mimedallo2025?igsh=MXBnczJiMG0zcGkycw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                        Seguir
+                        <Heart className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                      </a>
+                    </Button>
+                  </div>
+                  <div className="absolute -top-4 -right-4 w-20 h-20 md:w-24 md:h-24 bg-pink-400/30 rounded-full animate-float"></div>
+                  <div className="absolute -bottom-4 -left-4 w-24 h-24 md:w-32 md:h-32 bg-white/10 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
 
           {/* CTA Chips Premium */}
