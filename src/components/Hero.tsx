@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, MapPin, Sparkles, Percent, BookOpen, Instagram, Heart, GraduationCap } from "lucide-react";
+import DiscountSlider from "./DiscountSlider";
 
 const Hero = () => {
   return (
@@ -29,6 +30,9 @@ const Hero = () => {
             <div className="absolute -inset-2 sm:-inset-4 border-2 border-brand-gold/30 rounded-full animate-pulse"></div>
             <div className="absolute -inset-4 sm:-inset-8 border border-brand-turquoise/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
           </div>
+          
+          {/* Slider de Red de Descuentos */}
+          <DiscountSlider />
 
           {/* Main Title */}
           <div className="space-y-2 sm:space-y-4 max-w-2xl md:max-w-4xl">
